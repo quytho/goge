@@ -1,0 +1,99 @@
+.testimonials {
+  margin-bottom: 136px;
+  &-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &-heading {
+    font-size: 40px;
+    line-height: 158.34%;
+    background: -webkit-linear-gradient($color1, $color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 38px;
+  }
+  &-title {
+    width: 585px;
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    color: $gray;
+    text-align: center;
+  }
+  &-item {
+    width: 373px;
+    background: #ffffff;
+    border: 1px solid #efefef;
+    // box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    border-radius: 5px;
+    padding: 40px 50px 36px 39px;
+    &:nth-child(2) {
+      background: #ffffff;
+      box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    }
+  }
+  &-icon {
+    margin-bottom: 23px;
+  }
+  &-desc {
+    font-size: 14px;
+    line-height: 175.78%;
+    color: #5c5c5c;
+    margin-bottom: 50px;
+    display: block;
+  }
+  &-author {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0 12px;
+  }
+  &-avatar {
+    width: 59px;
+    height: 59px;
+    overflow: hidden;
+    border-radius: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+  }
+  &-name {
+    font-size: 16px;
+    line-height: 105.47%;
+    color: $gray;
+    margin-bottom: 3px;
+  }
+  &-category {
+    font-size: 12px;
+    line-height: 105.47%;
+    color: $gray;
+  }
+  &-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+    margin-bottom: 97px;
+  }
+  &-loader {
+    width: 160px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $gray;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      // transform: translateX(-50%);
+      width: 80px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: $primary-color;
+    }
+  }
+}

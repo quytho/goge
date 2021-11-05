@@ -1,0 +1,38 @@
+.price {
+  position: relative;
+  margin-bottom: 100px;
+  &-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 92px;
+  }
+  &-heading {
+    font-size: 40px;
+    line-height: 158.34%;
+    font-weight: 700;
+    background: -webkit-linear-gradient($color1, $color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 252px;
+    margin-bottom: 38px;
+  }
+  &-title {
+    display: block;
+    max-width: 359px;
+    font-size: 14px;
+    line-height: 175.78%;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  &-button {
+    padding: 19px 30px;
+  }
+}
+.rec5 {
+  position: absolute;
+  left: 0;
+  top: -50%;
+  // transform: translateY(-50%);
+  z-index: 10;
+}

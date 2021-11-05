@@ -1,0 +1,29 @@
+.feature {
+  margin: 0 auto;
+  width: 936px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 80px;
+  margin-bottom: 400px;
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &-icon {
+    margin-bottom: 26px;
+  }
+  &-heading {
+    font-size: 20px;
+    line-height: 182.7%;
+    color: $gray;
+    margin-bottom: 8px;
+  }
+  &-desc {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    color: $gray;
+    text-align: center;
+  }
+}

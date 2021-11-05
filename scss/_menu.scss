@@ -1,0 +1,34 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 24px;
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 50px;
+  }
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 10px;
+    .button {
+      width: 160px;
+    }
+  }
+  &-item {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: calc(18 / 15);
+    color: $bgc-gradient;
+    background: -webkit-linear-gradient($color1, $color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-link {
+    color: inherit;
+  }
+}

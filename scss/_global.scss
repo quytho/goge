@@ -1,0 +1,43 @@
+body {
+  line-height: 1;
+  font-family: $font;
+  color: $gray;
+  font-weight: 400;
+  background-color: white;
+}
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.container-fluid {
+  max-width: 1328px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1239px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.button {
+  display: inline-block;
+  padding: 20px 0;
+  border-radius: 100px;
+  font-family: $font-secondary;
+  line-height: calc(21 / 16);
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 700;
+  &--primary {
+    // background-image: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+    color: $gray-light;
+    background-color: $primary-color;
+  }
+  &--secondary {
+    background-color: $gray-light;
+    color: $primary-color;
+  }
+}
