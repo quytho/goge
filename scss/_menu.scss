@@ -32,3 +32,13 @@
     color: inherit;
   }
 }
+@media screen and (max-width: 1279px) {
+  .menu-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: none;
+  }
+}

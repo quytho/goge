@@ -36,3 +36,39 @@
   // transform: translateY(-50%);
   z-index: 10;
 }
+@media screen and (max-width: 1279px) {
+  .price-main {
+    gap: 0 70px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .price-heading {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .rec5 {
+    top: -35%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .price-main {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .price-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .price-title {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .price-button {
+    padding: 10px 30px;
+  }
+  .rec5 {
+    top: -15%;
+    height: 20%;
+  }
+}

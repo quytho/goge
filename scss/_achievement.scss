@@ -1,7 +1,7 @@
 .achievement {
   background-image: linear-gradient(90deg, $color1 0%, $color2 100%);
-  padding-top: 43px;
-  padding-bottom: 66px;
+
+  padding: 43px 0 66px 0;
   margin-bottom: 9px;
   &-list {
     display: flex;
@@ -37,5 +37,21 @@
     line-height: 17px;
     text-align: center;
     color: #ffffff;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .achievement-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .achievement {
+    padding: 35px 0 50px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .achievement-number {
+    margin-bottom: 5px;
+    font-size: 25px;
   }
 }

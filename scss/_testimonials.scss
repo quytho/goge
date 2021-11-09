@@ -1,4 +1,5 @@
 .testimonials {
+  overflow: hidden;
   margin-bottom: 136px;
   &-main {
     display: flex;
@@ -15,7 +16,7 @@
     margin-bottom: 38px;
   }
   &-title {
-    width: 585px;
+    max-width: 585px;
     font-size: 14px;
     line-height: calc(25 / 14);
     color: $gray;
@@ -95,5 +96,37 @@
       border-radius: 1px;
       background-color: $primary-color;
     }
+  }
+}
+@media screen and (max-width: 1279px) {
+  .testimonials-heading {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .testimonials-desc {
+    margin-bottom: 30px;
+  }
+  .testimonials-icon {
+    margin-bottom: 15px;
+  }
+  .testimonials-title {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .testimonials-slide {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .testimonials-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .testimonials-title {
+    font-size: 12px;
+    margin-bottom: 15px;
   }
 }
